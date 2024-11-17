@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Music Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Click to Play Birthday Music</h1>
+    <button onclick="playMusic()">Play Music</button>
+
+    <script>
+        function playMusic() {
+            // YouTube Embed URL
+            const youtubeUrl = 'https://www.youtube.com/embed/92uNF97v8_s?autoplay=1';
+
+            // Create an iframe dynamically and play the video
+            const iframe = document.createElement('iframe');
+            iframe.src = youtubeUrl;
+            iframe.width = '560';
+            iframe.height = '315';
+            iframe.frameBorder = '0';
+            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+            iframe.allowFullscreen = true;
+
+            // Append iframe to the body
+            document.body.appendChild(iframe);
+        }
+    </script>
+
+</body>
+</html>
