@@ -1,0 +1,8 @@
+{
+    "name": "Birthday Music Button",
+    "description": "Click the button to play birthday music from YouTube",
+    "author": "Your Name",
+    "version": "1.0",
+    "type": "visualization",
+    "libraries": []
+}
